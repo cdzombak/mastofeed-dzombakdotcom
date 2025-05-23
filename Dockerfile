@@ -5,9 +5,12 @@ RUN npm install -g typescript
 WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
-RUN yarn workspaces focus --all && \
+COPY src ./src
+COPY tsconfig.json .
+COPY .yarn .yarn
+COPY .yarnrc.yml .
+RUN yarn workspaces focus --production --all && \
     yarn install
-COPY . .
 RUN npm run build
 
 FROM node:24-alpine AS production
