@@ -1,0 +1,9 @@
+# `dotcom-mastofeed`
+
+## Environment Variables
+
+- `MASTODON_INSTANCE_URL`
+- `LOG_LEVEL`
+- `INTERVAL_SECONDS`
+- `PICTURES_ACCESS_TOKEN`
+- `BOOKMARKS_ACCESS_TOKEN`

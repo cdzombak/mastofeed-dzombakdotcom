@@ -1,0 +1,37 @@
+{
+  "name": "dotcom-mastofeed",
+  "version": "0.0.1",
+  "author": "Chris Dzombak",
+  "repository": "https://github.com/cdzombak/dotcom-mastofeed",
+  "license": "UNLICENSED",
+  "packageManager": "yarn@4.9.1",
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "npm": "please-use-yarn",
+    "yarn": "4.9.1"
+  },
+  "main": "dist/index.mjs",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@types/node": "^22.15.21",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.0"
+  },
+  "dependencies": {
+    "death": "^1.1.0",
+    "dotenv": "^16.5.0",
+    "env-var": "^7.5.0",
+    "mastofeed": "^1.8.6"
+  }
+}
