@@ -20,8 +20,12 @@ ENV NODE_ENV=production
 WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
+COPY src ./src
+COPY tsconfig.json .
+COPY .yarn .yarn
+COPY .yarnrc.yml .
 RUN yarn workspaces focus --production && \
     yarn install --immutable
 COPY --from=build /app/dist ./dist
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "dist/index.mjs"]

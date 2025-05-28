@@ -1,0 +1,8 @@
+---
+services:
+ dotcom-mastofeed:
+  build:
+   context: .
+   target: production
+  env_file:
+   - .env
