@@ -1,4 +1,4 @@
-import { Mastofeed } from 'mastofeed';
+import {Mastofeed} from 'mastofeed';
 import env from 'env-var';
 import { MASTODON_INSTANCE_URL, LOG_LEVEL } from '../utils/env.mjs';
 
@@ -14,11 +14,11 @@ export const picturesFeed = new Mastofeed({
     postDef: {
       id: { path: 'guid' },
       title: { path: 'title' },
-      description: { path: 'content', transforms: [] },
+      description: { path: 'content' },
       linkUrl: { path: 'link' },
       category: { path: 'category' },
     },
-    maxSyncedItems: 2,
+    maxSyncedItems: 25,
   },
   logging: {
     level: LOG_LEVEL,

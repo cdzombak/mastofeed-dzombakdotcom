@@ -1,6 +1,7 @@
 import {Mastofeed, QuotationMarksTransform} from 'mastofeed';
 import env from 'env-var';
 import { MASTODON_INSTANCE_URL, LOG_LEVEL } from '../utils/env.mjs';
+import {TrimTransform} from "./transform.mts.js";
 
 const BOOKMARKS_ACCESS_TOKEN = env.get('BOOKMARKS_ACCESS_TOKEN').required().asString();
 
@@ -13,11 +14,10 @@ export const bookmarksFeed = new Mastofeed({
     feedUrl: 'https://www.dzombak.com/feeds/bookmarks.rss.xml',
     postDef: {
       id: { path: 'guid' },
-      title: { path: 'title' },
-      description: { path: 'content', transforms: [new QuotationMarksTransform()] },
+      title: { path: 'title', transforms: [new TrimTransform(), new QuotationMarksTransform()] },
       linkUrl: { path: 'link' },
     },
-    maxSyncedItems: 2,
+    maxSyncedItems: 25,
   },
   logging: {
     level: LOG_LEVEL,
