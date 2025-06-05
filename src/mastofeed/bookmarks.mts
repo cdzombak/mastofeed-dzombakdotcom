@@ -11,7 +11,7 @@ export const bookmarksFeed = new Mastofeed({
     accessToken: BOOKMARKS_ACCESS_TOKEN,
   },
   rss: {
-    feedUrl: 'https://www.dzombak.com/feeds/bookmarks.rss.xml',
+    feedUrl: 'https://raindrop.io/collection/53460076/feed',
     postDef: {
       id: { path: 'guid' },
       title: { path: 'title', transforms: [new TrimTransform(), new QuotationMarksTransform()] },
