@@ -1,9 +1,11 @@
 import { Mastofeed } from 'mastofeed';
 import { picturesFeed } from './pictures.mjs';
+import { bbFeed } from './bb.mjs';
 import { bookmarksFeed } from './bookmarks.mjs';
 
 const allFeeds: Mastofeed[] = [
   picturesFeed,
+  bbFeed,
   bookmarksFeed,
 ];
 
