@@ -2,11 +2,13 @@ import { Mastofeed } from 'mastofeed';
 import { picturesFeed } from './pictures.mjs';
 import { bbFeed } from './bb.mjs';
 import { bookmarksFeed } from './bookmarks.mjs';
+import { blogFeed } from './blog.mjs';
 
 const allFeeds: Mastofeed[] = [
   picturesFeed,
   bbFeed,
   bookmarksFeed,
+  blogFeed,
 ];
 
 export async function syncAllFeeds(): Promise<void> {
