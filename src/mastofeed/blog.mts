@@ -15,7 +15,7 @@ export const blogFeed = new Mastofeed({
       id: { path: 'guid' },
       title: { path: 'title' },
       linkUrl: { path: 'link' },
-      description: { path: 'description' },
+      description: { path: 'content' },
     },
     maxSyncedItems: 25,
   },
