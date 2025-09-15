@@ -15,7 +15,6 @@ export const githubFeed = new Mastofeed({
       id: { path: 'guid' },
       title: { path: 'title' },
       linkUrl: { path: 'link' },
-      description: { path: 'content' },
     },
     maxSyncedItems: 25,
   },
