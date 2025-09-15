@@ -10,7 +10,7 @@ export const githubFeed = new Mastofeed({
     accessToken: GITHUB_ACCESS_TOKEN,
   },
   rss: {
-    feedUrl: 'https://www.dzombak.com/feeds/github-cdzombak.atom',
+    feedUrl: 'https://www.dzombak.com/feeds/github-cdzombak.rss',
     postDef: {
       id: { path: 'guid' },
       title: { path: 'title' },
