@@ -3,12 +3,14 @@ import { picturesFeed } from './pictures.mjs';
 import { bbFeed } from './bb.mjs';
 import { bookmarksFeed } from './bookmarks.mjs';
 import { blogFeed } from './blog.mjs';
+import { githubFeed } from './github.mjs';
 
 const allFeeds: Mastofeed[] = [
   picturesFeed,
   bbFeed,
   bookmarksFeed,
   blogFeed,
+  githubFeed,
 ];
 
 export async function syncAllFeeds(): Promise<void> {
