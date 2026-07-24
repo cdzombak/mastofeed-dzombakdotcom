@@ -1000,7 +1000,7 @@ __metadata:
     eslint-config-prettier: "npm:^10.1.2"
     eslint-import-resolver-typescript: "npm:^4.3.4"
     eslint-plugin-import: "npm:^2.31.0"
-    mastofeed: "git://github.com/cdzombak/mastofeed.git#44455e11c6ddbc33b3a2eaf0352ae90563e6fdbb"
+    mastofeed: "git://github.com/cdzombak/mastofeed.git#cdz/enforce-toot-length-limit"
     prettier: "npm:^3.5.3"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.31.0"
@@ -2087,9 +2087,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mastofeed@git://github.com/cdzombak/mastofeed.git#44455e11c6ddbc33b3a2eaf0352ae90563e6fdbb":
-  version: 1.8.6
-  resolution: "mastofeed@https://github.com/cdzombak/mastofeed.git#commit=44455e11c6ddbc33b3a2eaf0352ae90563e6fdbb"
+"mastofeed@git://github.com/cdzombak/mastofeed.git#cdz/enforce-toot-length-limit":
+  version: 1.8.8
+  resolution: "mastofeed@https://github.com/cdzombak/mastofeed.git#commit=cd715b774107534c0e15cfe1d5332ae37b9b1217"
   dependencies:
     "@pascal-giguere/megalodon": "npm:^10.2.2"
     axios: "npm:^1.8.4"
@@ -2098,7 +2098,7 @@ __metadata:
     html-entities: "npm:^2.6.0"
     rss-parser: "npm:^3.13.0"
     sanitize-html: "npm:^2.16.0"
-  checksum: 10c0/659714e6410ff52db27d1fa9d926fbd23ab2c2436774c6dcbbfca121a5fa6b384e26fdd24e92ea75a06f100fdb1eb98d1d47e8a877ada1c3a8e098845ebd170a
+  checksum: 10c0/f0cca8562ba7b92553ef1bd9163b244f3103372851bc9832782ea8231d0e5122d96f969f0072a7407962878fe07f86583140d03ee86439e0c58102c39fa6a74e
   languageName: node
   linkType: hard
 
