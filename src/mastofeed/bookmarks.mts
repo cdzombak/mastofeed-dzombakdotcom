@@ -1,4 +1,4 @@
-import {LogLevel, Mastofeed, QuotationMarksTransform} from 'mastofeed';
+import {LogLevel, Mastofeed} from 'mastofeed';
 import env from 'env-var';
 import {MASTODON_INSTANCE_URL} from '../utils/env.mjs';
 import {TrimTransform} from "./transform.mts.js";
@@ -14,7 +14,8 @@ export const bookmarksFeed = new Mastofeed({
     feedUrl: 'https://www.dzombak.com/feeds/bookmarks.rss.xml',
     postDef: {
       id: { path: 'guid' },
-      title: { path: 'title', transforms: [new TrimTransform(), new QuotationMarksTransform()] },
+      title: { path: 'title', transforms: [new TrimTransform()] },
+      description: { path: 'content', transforms: [new TrimTransform()] },
       linkUrl: { path: 'link' },
     },
     maxSyncedItems: 25,
