@@ -1,7 +1,7 @@
 import { Mastofeed } from 'mastofeed';
 import { picturesFeed } from './pictures.mjs';
 import { bbFeed } from './bb.mjs';
-import { birdsFeed } from './birds.mjs';
+// import { birdsFeed } from './birds.mjs';
 import { bookmarksFeed } from './bookmarks.mjs';
 import { blogFeed } from './blog.mjs';
 import { githubFeed } from './github.mjs';
@@ -9,7 +9,7 @@ import { githubFeed } from './github.mjs';
 const allFeeds: Mastofeed[] = [
   picturesFeed,
   bbFeed,
-  birdsFeed,
+  // birdsFeed,
   bookmarksFeed,
   blogFeed,
   githubFeed,
